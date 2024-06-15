@@ -16,6 +16,6 @@ pprint(movie_titles)
 ordered_movie_titles = [movie_titles[i] for i in range(len(movie_titles) - 1, -1, -1)]
 pprint(ordered_movie_titles)
 
-with open("movie.txt", "w", encoding="utf-8") as movie_names:
+with open("movie.txt", mode="w", encoding="utf-8") as movie_names:
     for movie in ordered_movie_titles:
         movie_names.write(f"{movie}\n")
