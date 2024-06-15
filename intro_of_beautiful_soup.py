@@ -1,9 +1,11 @@
 from bs4 import BeautifulSoup
 
+# opened website.html file and passed all the content as a string inside the contents variable
 with open("website.html") as website:
     contents = website.read()
     # print(contents)
 
+# created soup object from the BeautifulSoup class from bs4 package module
 soup = BeautifulSoup(contents, "html.parser")
 
 # print(soup)  # returns all the html code
